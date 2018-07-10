@@ -11,4 +11,4 @@ filler_vm, maps and standard bots in resources
 example: ./filler_vm -f maps/map02 -p1 players/hcao.filler -p2 players/kmykhail.filler | sh color.sh
 ```
 
-https://imgflip.com/gif/2dq8db
+<a href="https://imgflip.com/gif/2dq8ur"><img src="https://i.imgflip.com/2dq8ur.gif" title="made at imgflip.com"/></a>
