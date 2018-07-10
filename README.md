@@ -10,3 +10,5 @@ filler_vm, maps and standard bots in resources
 ```
 example: ./filler_vm -f maps/map02 -p1 players/hcao.filler -p2 players/kmykhail.filler | sh color.sh
 ```
+
+![filler_nrom](https://user-images.githubusercontent.com/31519926/42507732-dc1c9712-844e-11e8-8395-58324ff9d027.gif)
