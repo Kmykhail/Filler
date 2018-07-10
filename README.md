@@ -6,6 +6,7 @@ More information you can read in subject : https://github.com/Kmykhail/Filler/bl
 $> make
 
 # Run
+filler_vm, maps and standard bots in resources
 ```
 example: ./filler_vm -f maps/map02 -p1 players/hcao.filler -p2 players/kmykhail.filler | sh color.sh
 ```
