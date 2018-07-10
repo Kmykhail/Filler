@@ -6,7 +6,7 @@
 #    By: kmykhail <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/28 15:53:30 by kmykhail          #+#    #+#              #
-#    Updated: 2018/01/27 19:37:35 by kmykhail         ###   ########.fr        #
+#    Updated: 2018/07/10 11:59:06 by kmykhail         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,18 +30,18 @@ FLAGS = -Wall -Werror -Wextra
 CC = gcc
 
 %.o: %.c $(INCLUDES)
-	$(CC) $(FLAGS) -c $< -I ../includes
+	@$(CC) $(FLAGS) -c $< -I ../includes
 
 all: $(NAME)
 
 $(NAME): $(OBJ_NAME)
-	ar rc $(NAME) $(OBJ_NAME)
-	ranlib $(NAME)
+	@ar rc $(NAME) $(OBJ_NAME)
+	@ranlib $(NAME)
 
 clean:
-	rm -f $(OBJ_NAME)
+	@rm -f $(OBJ_NAME)
 
 fclean: clean
-	rm -f $(NAME)
+	@rm -f $(NAME)
 
 re: fclean all

@@ -6,7 +6,7 @@
 #    By: kmykhail <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/01/04 18:49:20 by kmykhail          #+#    #+#              #
-#    Updated: 2018/01/27 19:24:47 by kmykhail         ###   ########.fr        #
+#    Updated: 2018/07/10 12:02:50 by kmykhail         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,20 +26,19 @@ CC = gcc
 LIBDIR = libft
 
 %.o: srcs/%.c
-	$(CC) $(FLAGS) -c $< -I includes
+	@$(CC) $(FLAGS) -c $< -I includes
 
 all: $(NAME)
 
 $(NAME): $(OBJO)
-	make -C $(LIBDIR)
-	$(CC) $(FLAGS) -o $(NAME) $(OBJO) -L./$(LIBDIR) -lft -I includes
-
+	@make -C $(LIBDIR)
+	@$(CC) $(FLAGS) -o $(NAME) $(OBJO) -L./$(LIBDIR) -lft -I includes
+	@echo "\033[3;36mfiller has been made\033[0m"
 clean:
-	make clean -C $(LIBDIR)
-	rm -f $(OBJO)
-
+	@make clean -C $(LIBDIR)
+	@rm -f $(OBJO)
 fclean: clean
-	make clean -C $(LIBDIR)
-	rm -f $(NAME)
+	@make clean -C $(LIBDIR)
+	@rm -f $(NAME)
 
 re: fclean all
