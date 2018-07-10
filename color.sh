@@ -6,17 +6,16 @@
 #    By: kmykhail <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/22 21:14:16 by kmykhail          #+#    #+#              #
-#    Updated: 2018/02/22 21:14:19 by kmykhail         ###   ########.fr        #
+#    Updated: 2018/07/10 12:16:49 by kmykhail         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-gren=$(printf "\033[31mO\033[0m")
-yel=$(printf "\033[33mX\033[0m")
-grens=$(printf "\033[34mo\033[0m")
-yel2=$(printf "\033[32mx\033[0m")
+white=$(printf "\033[31m☠\033[0m")
+red=$(printf "\033[31m♥︎\033[0m")
+yel2=$(printf "\033[1;33m♥︎\033[0m")
 
-sed "s|O|$gren|g" |
-sed "s|X|$yel|g" |
+sed "s|O|$white|g" |
+sed "s|X|$red|g" |
 sed "s|x|$yel2|g" |
-sed "/^0.. /s|o|$grens|g" |
+sed "/^0.. /s|o|$white|g" |
 sed "s|fin|player|g"
